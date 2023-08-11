@@ -391,7 +391,7 @@ const HomeContent = ({ items }) => {
         {filterDataOnRatings?.length > 0 ? (
           <div
             className={`
-           w-full h-full flex flex-col items-center  sm:grid sm:grid-cols-2 lg:grid-cols-3`}
+           w-full h-full flex flex-col  sm:grid sm:grid-cols-2 lg:grid-cols-3`}
           >
             {filterDataOnRatings?.map((item) => {
               return (
