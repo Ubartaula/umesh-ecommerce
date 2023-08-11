@@ -148,10 +148,12 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-
+      {/* mobile view */}
       <div
         className={`${showMenu ? "" : "hidden"} bg-sky-200 fixed z-50  ${
-          history?.pathname === "/" || "/dash" ? "top-[6rem]" : "top-[3rem]"
+          history?.pathname.endsWith("/") || history?.pathname.endsWith("/dash")
+            ? "top-[6rem]"
+            : "top-[3rem]"
         } left-0 md:hidden `}
       >
         <div className=" relative  border border-gray-300 p-2 min-w-full h-l">
